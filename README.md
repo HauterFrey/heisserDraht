@@ -10,3 +10,5 @@ UI for timing and time penalties while playing on a physical "hot wire game"
 # Tools
 - [PyCharm](https://www.jetbrains.com/de-de/pycharm/download/download-thanks.html?platform=windows&code=PCC)
 - [QtDesigner](https://pythonbasics.org/qt-designer-python/)
+- [Python3](https://www.python-kurs.eu/python3_kurs.php)
+- [Anaconda - Python-Paket u.a. für WIndows](https://www.anaconda.com/)
