@@ -35,6 +35,9 @@
    <enum>QTabWidget::Rounded</enum>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget{background-color: #7e919f}</string>
+   </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
      <widget class="QLCDNumber" name="lcdNumber">
@@ -55,7 +58,8 @@
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">QLCDNumber {color: green;}</string>
+       <string notr="true">QLCDNumber {color: green;}
+QWidget#lcdnumber{border: 10pt solid black}</string>
       </property>
       <property name="inputMethodHints">
        <set>Qt::ImhNone</set>
@@ -87,6 +91,12 @@
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <widget class="QLabel" name="label_4">
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -149,13 +159,13 @@
            <bool>false</bool>
           </property>
           <property name="styleSheet">
-           <string notr="true">QLCDNumber {color: red;}</string>
+           <string notr="true">QLCDNumber {color: yellow;}</string>
           </property>
           <property name="inputMethodHints">
            <set>Qt::ImhNone</set>
           </property>
           <property name="frameShape">
-           <enum>QFrame::NoFrame</enum>
+           <enum>QFrame::Box</enum>
           </property>
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
@@ -192,6 +202,9 @@
           <pointsize>14</pointsize>
           <italic>true</italic>
          </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
         </property>
         <property name="text">
          <string>TextLabel</string>
